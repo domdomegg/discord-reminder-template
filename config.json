@@ -1,0 +1,13 @@
+{
+    "channelId": "123456789123456789",
+    "events": [
+        {
+            "date": "2020-10-08",
+            "message": "<@987654321987654321> go and do a thing"
+        },
+        {
+            "date": "2020-10-09",
+            "message": "<@987654321987654321> go and do a different thing"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+name: Run
+
+on:
+  schedule:
+    # Every day at 17:39
+    - cron: '39 17 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout ${{ github.sha }}
+      uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14
+    - name: Install dependencies
+      run: npm ci
+    - name: Run
+      run: npm start
+      env:
+        DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
