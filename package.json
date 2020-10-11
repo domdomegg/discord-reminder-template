@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node --unhandled-rejections=strict index.js"
   },
   "author": "Adam Jones (domdomegg)",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "discord.js": "^12.3.1"
   }
