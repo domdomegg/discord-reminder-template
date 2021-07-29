@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node --unhandled-rejections=strict index.js"
+    "start": "node --unhandled-rejections=strict index.js",
+    "test": "jest"
   },
   "author": "Adam Jones (domdomegg)",
   "license": "MIT",
   "dependencies": {
     "discord.js": "^12.3.1"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
   }
 }

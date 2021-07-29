@@ -1,0 +1,21 @@
+name: Test
+
+on:
+  push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+    - name: Checkout ${{ github.sha }}
+      uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14
+    - name: Install dependencies
+      run: npm ci
+    - name: Test
+      run: npm run test
