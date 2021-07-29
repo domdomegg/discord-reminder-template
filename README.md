@@ -5,7 +5,7 @@ Uses GitHub Actions to send reminders to a Discord channel
 ## Usage
 
 1. Click 'Use this template'
-2. Set up config.json
+2. Set up [config.json](./config.json)
 3. Create the `DISCORD_BOT_TOKEN` secret in the GitHub repository settings
 4. Enable GitHub Actions on the new repository
 
