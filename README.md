@@ -1,6 +1,6 @@
 # discord-reminder-template
 
-Uses GitHub Actions to send reminders to a Discord channel
+Use GitHub Actions to send reminders to a Discord channel
 
 ## Usage
 
